@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h3>Anket</h3>
+        <form action="#">
+          <label for="name">Adiniz</label>
+          <input type="text" id="name" placeholder="Adiniz..." required />
+          <br><br>
+          <label for="surname">Soyadiniz</label>
+          <input type="text" id="surname" placeholder="soyadiniz..." required />
+          <br><br>
+          <label for="age">Yasiniz:</label>
+          <input type="number" id="age" placeholder="yashiniz..." min="18" max="99"/>
+          <br><br>
+          <label for="email">E-poct asdresiniz</label>
+          <input type="email" id="email" placeholder="Emailiniz..." />
+          <br><br>
+
+            <label for="password">Shifreniz:</label>
+            <input type="password" id="password" placeholder="shifreniz..." required />
+            <br><br>
+            <label for="newPassword">Yeni shifre:</label>
+            <input type="password" id="newPassword" placeholder="yeni shifreniz..." pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}" title="Şifrədə ən azı bir böyük hərf, bir kiçik hərf, bir rəqəm və minimum 8 simvol olmalıdır." required/>
+            <br><br>
+            <label for="repassword">Shifrenizi tekrar edin:</label>
+            <input type="password" id="repassword" placeholder="shifrenizi tekrar edin" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}" title="Şifrədə ən azı bir böyük hərf, bir kiçik hərf, bir rəqəm və minimum 8 simvol olmalıdır." required/>
+            <br><br>
+
+            <label for="city">Sheher seç:</label>
+            <select id="options">
+                <option value="city">Baki</option>
+                <option value="city">Gence</option>
+                <option value="city">Shamaxi</option>
+                <option value="city">Ismayilli</option>
+            </select><br>
+
+            <p>Odenish usulunu secin:</p>
+            <input type="radio" name="payment" id="cash" value="cash">
+            <label for="cash">Negd odenish</label><br>
+            <input type="radio" name="payment" id="online" value="online" checked>
+            <label for="online">Bank karti ile</label><br>
+            <input type="radio" name="payment" id="delivery" value="delivery">
+            <label for="delivery">Qapida kartla</label><br><br>
+
+            <p>Tedbire qeydiyyat ucun ishtirak etmek istediyiniz sessiyani secin</p>
+            <input type="checkbox" name="langs" id="front" value="front">
+            <label for="langs">FrontEnd</label><br>
+            <input type="checkbox" name="langs" id="back" value="back">
+            <label for="langs">BackEnd</label><br>
+            <input type="checkbox" name="langs" id="design" value="design">
+            <label for="design">UI/UX</label><br> <br><br>
+            <label for="message">Elaveniz varsa, qeyd edin</label><br><br>
+            <textarea id="message" name="message" rows="5" cols="30" placeholder="Add your extra info..."></textarea><br><br>
+            <input type="checkbox" id="terms" name="terms" value="agreed" required>
+            <label for="terms">Butun shertlerle raziyam.</label><br><br>
+            <button type="submit">Qeydiyyatdan kec</button><br><br><br>
+
+            <label for="file">Fayl secin:</label>
+            <input type="file" id="file" name="file" accept=".pdf,.docx" required><br><br>
+            <button type="submit">YUkle</button><br><br>
+            <label for="phone">Telefon nomrenizi qeyd edin</label><br><br>
+            <input type="tel" id="phone" name="phone" placeholder="+994501234567" pattern="^\+[1-9]\d{1,14}$" title="Enter a valid international phone number" required><br><br><br>
+            <label for="position">Vezife:</label>
+            <select id="position" name="position" required>
+              <option value="" disabled selected>Select your position</option>
+              <option value="manager">Manager</option>
+              <option value="developer">Developer</option>
+              <option value="designer">Designer</option>
+              <option value="accountant">Accountant</option>
+              <option value="sales">Sales Representative</option>
+              <option value="other">Other</option>
+            </select><br><br><br>
+
+            <label for="tickets">Biletlerin sayi:</label>
+            <input type="number" id="tickets" name="tickets" min="1" max="10" step="1" value="1" required> <br><br><br>
+
+            <label for="concert-date">Konsertin vaxti:</label>
+            <input type="date" id="concert-date" name="concert-date" min="2026-10-25" required>
+            <br><br>
+          
+            <label for="concert-time">Konsertin bashlama saati:</label>
+            <input type="time" id="concert-time" name="concert-time" required>
+            <br><br>
+          
+            <button type="submit">Bilet sifarish edin</button><br><br><br>
+
+            <form>
+              <fieldset>
+                <legend>Shexsi melumatlar:</legend>
+                <label for="name">Adiniz</label>
+                <input type="text" id="name" placeholder="Adiniz..." required />
+                <br><br>
+                <label for="surname">Soyadiniz</label>
+                <input type="text" id="surname" placeholder="soyadiniz..." required />
+                <br><br>
+                <label for="age">Yasiniz:</label>
+                <input type="number" id="age" placeholder="yashiniz..." min="18" max="99"/>
+                <br><br>
+                <label for="email">E-poct asdresiniz</label>
+                <input type="email" id="email" placeholder="Emailiniz..." />
+                <br><br>
+                <label for="city">Sheher seç:</label>
+                <select id="options">
+                    <option value="city">Baki</option>
+                    <option value="city">Gence</option>
+                    <option value="city">Shamaxi</option>
+                    <option value="city">Ismayilli</option>
+                </select><br>
+              </fieldset><br>
+              <fieldset>
+                <legend>Mesajiniz:</legend>
+                <label for="subject">Movzu:</label>
+                <input type="text" id="subject" name="subject" required>
+                <br><br>
+    
+                <label for="message">Mesajinizi yazin:</label>
+                <br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                <br><br>
+    
+                <button type="submit">Gonder</button>
+              </fieldset>
+            </form><br><br><br>
+            <form>
+              <fieldset>
+                  <legend>Avtomobil secimi edin</legend>
+          
+                  <label for="budget">Budce araligi:</label>
+                  <input type="range" id="budget" name="budget"
+                         min="100" max="2000" step="50">
+                  <br><br>
+          
+                  <label for="color">Avtomobilin rengi:</label>
+                  <input type="color" id="color" name="color">
+                  <br><br>
+          
+                  <p>Yanacaq novu:</p>
+          
+                  <input type="radio" id="petrol" name="fuel" value="petrol">
+                  <label for="petrol">Benzin</label>
+          
+                  <input type="radio" id="diesel" name="fuel" value="diesel">
+                  <label for="diesel">Dizel</label>
+          
+                  <input type="radio" id="electric" name="fuel" value="electric">
+                  <label for="electric">Elektrik</label>
+              </fieldset>
+            </form><br><br><br>
+            <form>
+              <fieldset>
+                  <legend>Onlayn qiymetlendirme</legend>
+          
+                  <p>Xidmetimizi 1-den 5-e qeder qiymetlendirin:</p>
+          
+                  <input type="radio" id="rating1" name="rating" value="1">
+                  <label for="rating1">1</label>
+          
+                  <input type="radio" id="rating2" name="rating" value="2">
+                  <label for="rating2">2</label>
+          
+                  <input type="radio" id="rating3" name="rating" value="3">
+                  <label for="rating3">3</label>
+          
+                  <input type="radio" id="rating4" name="rating" value="4">
+                  <label for="rating4">4</label>
+          
+                  <input type="radio" id="rating5" name="rating" value="5">
+                  <label for="rating5">5</label>
+          
+                  <br><br>
+          
+                  <label for="feedback">Teklif ve shikayetler:</label>
+                  <br>
+                  <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+          
+                  <br><br>
+          
+                  <button type="reset">Temizle</button>
+              </fieldset>
+           </form><br><br><br>
+           <form>
+              <label for="email">E-poct:</label>
+          
+              <input type="email" id="email" name="email" autocomplete="email" required>
+          
+              <button type="submit">Abune ol</button>
+            </form>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
